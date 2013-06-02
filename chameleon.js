@@ -1,4 +1,4 @@
-// Copyright (c) 2012 fntzr <fantazuor@gmail.com>
+// Copyright (c) 2012-2013 fntzr <fantazuor@gmail.com>
 // Effect.Chameleon extend Effect.Base (script.aculo.us)
 // Effect.Chameleon is freely distributable under the terms of an MIT-style license.
 
