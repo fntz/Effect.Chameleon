@@ -28,6 +28,6 @@ Effect.Chameleon
      * type: number
      * default: 3.0
              
-###Watch in action: demo.html
+###Watch in action: demo.html [preview](http://bit.ly/12YgdFs)
          
         
