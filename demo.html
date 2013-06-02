@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js?load=effects"></script>
+<script type="text/javascript" src="chameleon.js"></script>
+<script type="text/javascript">
+document.observe('dom:loaded',function(){
+      new Effect.Chameleon('demo-1',{pause : 3 });
+      new Effect.Chameleon('demo-menu',{selector:'li, li>a'});
+      new Effect.Chameleon('demo-bg',{change:'bgcolor'});
+      new Effect.Chameleon('demo-all',{change:'all'});
+      new Effect.Chameleon('demo',{selector : 'p'});
+      new Effect.Chameleon('demo-finish');
+});
+</script>
+<style>
+  div.code{
+    background-color: #808080;
+    width: 700px;
+    font-color: black;
+    font-family: Courier;
+    padding: 10px;
+    border: none;
+    margin: 15px 0 10px 55px;
+  }
+  .demo{
+    margin: 30px 0 10px 55px;
+  }
+  p{
+   font-size: 2.5em;
+  }
+  #demo p {
+   font-size: 1.0em;
+   }
+  li{
+   list-style: decimal;
+  }
+</style>
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<p id="demo-1" class="demo">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. 
+</p>
+<div class="code">
+new Effect.Chameleon('demo-1',{pause : 3 });
+</div>
+
+<hr></hr>
+
+<ul id = 'demo-menu' class="demo">
+  <li class="one"><a href="#">Lorem</a></li>
+  <li>Ipsum</li>
+  <li class="one"> Dolor</li>
+  <li>Sit</li>
+  <li class="one">Amet</li>
+  <li>Consectetuer</li>
+</ul>
+
+<div class="code">
+new Effect.Chameleon('demo-menu',{selector:'li, li>a'});
+</div>
+
+<hr></hr>
+
+<h1 id='demo-bg' class="demo">Background-color</h1>
+
+<div class="code">
+new Effect.Chameleon('demo-bg',{change:'bgcolor'});
+</div>
+<hr></hr>
+
+<h1 id='demo-all' class="demo">All colorize Background-color</h1>
+
+<div class="code">
+new Effect.Chameleon('demo-all',{change:'all'});
+</div>
+<hr></hr>
+
+<div id="demo" class="demo">
+ <p>
+ "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+ </p>
+ <p>
+ "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+ </p>
+ <p>
+ "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+ </p>
+
+</div>
+<div class="code">
+new Effect.Chameleon('demo',{selector : 'p'});
+</div>
+<hr></hr>
+
+<div id='demo-finish' class="demo">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+<div class="code">
+new Effect.Chameleon('demo-finish');
+</div>
+<hr></hr>
+
+
+
+
+
+
+
+</body>
+</html>

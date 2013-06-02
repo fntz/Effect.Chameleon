@@ -1,0 +1,33 @@
+Effect.Chameleon
+----------------
+
+###Require:
+  + prototype.js
+  + effects.js 
+
+###OPTIONS
+   + duration:
+     * type: number
+     * default: 0
+   + selector:
+     * type: false or string
+     * default: false
+   + change:
+     * variants: 'color' or 'background-color' or 'all'
+     * default : 'color'
+   + color:
+     * type: object { red: [min, max], green:[min,max],blue:[min,max] }
+     * default: {
+     	    red    : [0,255],
+		    green  : [0,255],
+		    blue   : [0,255]
+       }
+   + bgcolor:
+     * see color
+   + pause:
+     * type: number
+     * default: 3.0
+             
+###Watch in action: demo.html
+         
+        
